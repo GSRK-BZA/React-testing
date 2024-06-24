@@ -1,17 +1,9 @@
-import { legacy_createStore } from "redux";
-function cartReducer(state={items : {}}, action){
-    switch(action.type){
-        case "cart/add":{
-            break;
-        }
-        case "cart/remove":{
-            break;
-        }
-        default:{
-            return state;
-            break;
-        } 
-    }
+import { createStore } from "redux";
+function cartReducer(state= { items: {}}, action) {
+  
 }
-const store = legacy_createStore(cartReducer);
+
+
+const store = createStore(cartReducer);
+
 export default store;
